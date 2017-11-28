@@ -124,7 +124,6 @@ npm_node_modules() {
     npm install --unsafe-perm --userconfig $build_dir/.npmrc 2>&1
     
     npm run build
-    ls ./dist
     cp -r ./src/Views ./dist
   else
     echo "Skipping (no package.json)"
